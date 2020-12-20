@@ -5,6 +5,7 @@ let main = document.querySelector('main');
 let geturlbtn = document.querySelector('#geturlbtn');
 
 let locationURL = window.location.search.replace('?','');
+locationURL.replace('%3A', ':').replace('%2F', '/').replace('%3F', '?');
 
 // Fetch
 function parse(text) {
