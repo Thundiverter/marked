@@ -2,7 +2,7 @@ let urlinput = document.querySelector('#urlinput');
 let select = document.querySelector('#select');
 let pastebtn = document.querySelector('#pastebtn');
 let main = document.querySelector('main');
-//let geturlbtn = document.querySelector('#geturlbtn');
+let geturlbtn = document.querySelector('#geturlbtn');
 
 let locationURL = window.location.search.replace('?','');
 
@@ -27,9 +27,8 @@ parsebtn.addEventListener('click', () => {
 	parse(urlinput.value);
 });
 
-/*
 // From URL
-console.log(locationURL);
+//console.log(locationURL);
 if (locationURL != '') {
 	urlinput.value = locationURL;
 	parse(locationURL);
@@ -37,7 +36,7 @@ if (locationURL != '') {
 
 // Get URL
 geturlbtn.addEventListener('click', () => {
-	prompt('Copy this URL', 'https://thundiverter.github.io/marked?' + urlinput.value);
-});*/
+	prompt('Copy this URL to share it with someone', 'https://thundiverter.github.io/marked?' + urlinput.value);
+});
 
 // https://github.com/Thundiverter/marked
