@@ -8,19 +8,19 @@ header {
 	justify-content: center;
 }
 
-#urlinput {
+header input {
 	padding: 4px 8px;
 	max-width: 256px;
 	width: 100%;
 	margin: 2px;
 }
 
-#parsebtn {
+header button {
 	padding: 4px 16px;
 	margin: 2px;
 }
 
-#select {
+header select {
 	padding: 4px 8px;
 	margin: 2px;
 	margin-left: 8px;
