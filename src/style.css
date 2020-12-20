@@ -10,7 +10,8 @@ header {
 
 #urlinput {
 	padding: 4px 8px;
-	min-width: 256px;
+	max-width: 256px;
+	width: 100%;
 	margin: 2px;
 }
 
@@ -32,6 +33,7 @@ main {
 
 footer {
 	margin: 24px auto;
+	font-size: 90%;
 }
 
 table {
