@@ -40,8 +40,9 @@ if (locationURL != '') {
 
 // Get URL
 geturlbtn.addEventListener('click', () => {
-	navigator.clipboard.writeText('https://thundiverter.github.io/marked?' + urlinput.value);
-	alert('Copied to clipboard');
+	/*navigator.clipboard.writeText('https://thundiverter.github.io/marked?' + urlinput.value);
+	alert('Copied to clipboard');*/
+	prompt('Copy this URL to share it with someone', 'https://thundiverter.github.io/marked?' + urlinput.value);
 });
 
 // https://github.com/Thundiverter/marked
