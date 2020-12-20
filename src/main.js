@@ -4,7 +4,7 @@ let pastebtn = document.querySelector('#pastebtn');
 let main = document.querySelector('main');
 let geturlbtn = document.querySelector('#geturlbtn');
 
-let locationURL = window.location.search.replace('?','');
+let locationURL = decodeURIComponent(window.location.search.replace('?',''));
 
 // Fetch
 function parse(text) {
@@ -29,9 +29,10 @@ parsebtn.addEventListener('click', () => {
 
 // From URL
 if (locationURL != '') {
-	locationURL.replace('%3A', ':');
+	/*locationURL.replace('%3A', ':');
 	locationURL.replace('%2F', '/');
-	locationURL.replace('%3F', '?');
+	locationURL.replace('%3F', '?');*/
+	console.log(locationURL);
 	
 	urlinput.value = locationURL;
 	parse(urlinput.value);
@@ -39,7 +40,8 @@ if (locationURL != '') {
 
 // Get URL
 geturlbtn.addEventListener('click', () => {
-	prompt('Copy this URL to share it with someone', 'https://thundiverter.github.io/marked?' + urlinput.value);
+	navigator.clipboard.writeText('https://thundiverter.github.io/marked?' + urlinput.value);
+	alert('Copied to clipboard');
 });
 
 // https://github.com/Thundiverter/marked
