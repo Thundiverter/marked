@@ -15,6 +15,9 @@ function parse(text) {
 				case 'HTML':
 					main.innerText = marked(result);
 					break;
+				/*case 'Markdown':
+					main.innerText = text;
+					break;*/
 				default:
 					main.innerHTML = marked(result);
 					break;
