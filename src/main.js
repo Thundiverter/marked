@@ -28,10 +28,9 @@ parsebtn.addEventListener('click', () => {
 });
 
 // From URL
-//console.log(locationURL);
 if (locationURL != '') {
 	urlinput.value = locationURL;
-	parse(locationURL);
+	parse(urlinput.value);
 }
 
 // Get URL
